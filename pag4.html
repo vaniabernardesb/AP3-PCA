@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitamina D e Covid-19</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>VITAMINA D</h1>
+        <p>Todas as respostas para as suas dúvidas sobre a vitamina que todo mundo está falando por aí.</p>
+    </header>
+        <nav>
+                <a href="index.html">O que é a vitamina D?</a>
+                <a href="pag2.html">Quais são as suas fontes?</a>
+                <a href="pag3.html">Só o consumo alimentar é suficiente?</a>
+                <a href="pag4.html">Vitamina D e Covid-19</a>
+        </nav>
+        <main>
+            <article>
+            <h1>A importância da vitamina D nos casos de COVID19</h1>
+
+                <img src="blog-richet-vitamina-D-01.png" class="doutor">
+            <p>De acordo com estudos, a vitamina D é capaz de articular o sistema imune inato. Ou seja, nossa primeira defesa que é responsável por uma resposta assim que nosso organismo é invadido por microorganismos nocivos.</P>
+            <p>Durante a pandemia, muito se questionou se haveria alguma relação entre a deficiência de vitamina D e Covid-19, principalmente em casos mais graves da infecção.  </p>
+            <p>Atualmente alguns estudos vêm correlacionando a deficiência de vitamina D com um maior risco de complicações junto a infecção por Covid-19, principalmente em pacientes obesos, negros e com diabetes tipo 1 e 2. Porém, ainda é muito cedo para dizer com certeza se a suplementação da vitamina é eficiente na prevenção do agravamento da doença causada pelo vírus causador da pandemia.</p>
+
+            <h1 class="exposição">Seu tempo de exposição ao sol é satisfatório/</h1>
+                <p>Tempo de exposição ao sol por semana: <input type= "number" name= "txtvel" id= "txtvel"> minutos/semana. 
+                <input type="button" value="Verificar" onclick = "calcular()">
+                <div id="res"></div>
+            <script>
+                function calcular() { 
+                var txtv = document.querySelector('input#txtvel')
+                var res = document.querySelector('div#res')
+                var vel= Number (txtv.value)
+                res.innerHTML = `<p>Sua exposição para metabolização de vitamina D é de <strong> ${vel} </strong> minutos por semana. Lembre-se: Dê preferência para exposição ao sol antes das 10h e depois das 16h.</p>`
+                }
+            </script>
+            </article>
+        </main>
+</body>
+</html>
